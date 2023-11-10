@@ -6,30 +6,33 @@
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/p-favicon.svg" />
-    <link rel="stylesheet" href="/assets/font-awesome/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/dist/assets/img/p-favicon.svg" />
+    <link rel="stylesheet" href="/dist/assets/font-awesome/fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
 <body>
     <!-- NAV MENU START -->
-    <nav class="bg-[#3A4D39] dark:text-white py-4 shadow-sm w-full">
-        <div class="w-10/12 mx-auto flex flex-col md:flex-row items-center md:justify-between">
-            <!-- Logo -->
+    <nav class="bg-[#3A4D39] dark:text-white fixed z-50 py-4 shadow-sm w-full shadow-[rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px]">
+        <div class="w-10/12 mx-auto flex md:flex-row items-center justify-between gap-4">
             <div>
-                <h2 class="text-3xl font-bold">
+                <h2 class="text-2xl md:text-3xl font-bold">
                     <a href="index.html">PEJKOVSKI PETAR</a>
                 </h2>
             </div>
-            <!-- /End Logo -->
-            <div class="mt-5 md:mt-0">
-                <ul class="flex flex-col md:flex-row md:space-x-5 w-full items-center">
+            <div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="flex flex-col md:flex-row md:space-x-5 w-full items-center" id="nav-links">
                     <li>
-                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300">Portfolio</a>
+                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300">About</a>
+                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300">Contact</a>
+                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,9 +44,9 @@
     <header class="bg-[#B0D9B1]">
         <div class="flex flex-col items-center justify-center gap-6 w-11/12 md:w-full mx-auto">
             <!-- Portfolio image -->
-            <div class="bg-[#3A4D39] rounded-t-full mt-40">
+            <div class="bg-[#3A4D39] rounded-t-full mt-[305px] md:mt-[200px]">
                 <figure class="-mt-[110px]">
-                    <img class="" src="/assets/img/petar.png">
+                    <img class="w-[80%] md:w-full mx-auto" src="/dist/assets/img/petar.png">
                 </figure>
             </div>
 
@@ -64,7 +67,7 @@
     <!-- /HEADER SECTION END -->
 
     <!-- PORTFOLIO -->
-    <section class="w-4/6 mx-auto my-20">
+    <section id="portfolio" class="w-4/6 mx-auto h-auto lg:h-screen py-40">
 
         <!-- Portfolio title -->
         <h2 class="text-3xl md:text-4xl text-[#40513B] font-bold text-center uppercase tracking-[0.10rem]">Porftolio</h2>
@@ -79,7 +82,7 @@
         <!-- Projects block -->
         <div class="flex justify-center">
             <!-- Trigger the Modal -->
-            <img id="myImg" src="/assets/img/Portfolio/priorilist-portfolio.png" alt="Priorilist">
+            <img id="myImg" src="/dist/assets/img/Portfolio/priorilist-portfolio.png" alt="Priorilist">
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -101,9 +104,9 @@
     <!-- /PORTFOLIO END-->
 
     <!-- ABOUT -->
-    <section class="my-20 h-auto lg:h-screen bg-[#B0D9B1]">
+    <section id="about" class="h-auto lg:h-screen bg-[#B0D9B1]">
 
-        <div class="w-11/12 md:w-5/6 mx-auto py-[6rem]">
+        <div class="w-11/12 md:w-5/6 mx-auto py-40">
             <!-- About title -->
             <h2 class="text-3xl md:text-4xl text-white font-bold text-center uppercase tracking-[0.10rem]">About</h2>
 
@@ -197,7 +200,7 @@
     <!-- /ABOUT END-->
 
     <!-- CONTACT -->
-    <section class="mx-auto w-11/12 sm:w-9/12 md:8/12 lg:w-1/2 h-auto md:h-screen">
+    <section id="contact" class="mx-auto w-11/12 sm:w-9/12 md:8/12 lg:w-1/2 h-auto py-40">
         <!-- About title -->
         <h2 class="text-3xl md:text-4xl text-[#40513B] font-bold text-center uppercase tracking-[0.10rem]">Contact me</h2>
 

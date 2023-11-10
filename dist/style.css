@@ -1,4 +1,56 @@
+/* NAV MENU */
 
+.menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon.open .bar {
+        background-color: #fff; /* Add this to ensure bars are visible when the menu is open */
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #3A4D39;
+        padding: 10px;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+}
+
+
+/* MODAL */
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -86,3 +138,4 @@
         width: 100%;
     }
 }
+

@@ -1,5 +1,6 @@
 // Function to scroll to the top when the page is loaded or refreshed
 window.onload = function () {
+  history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
 };
 

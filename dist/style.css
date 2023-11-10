@@ -49,6 +49,13 @@
     }
 }
 
+/* Add this to your existing CSS */
+#nav-links a.active {
+    color: white; /* Change this to the color you want for the active link */
+    background-color: #609966;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
 
 /* MODAL */
 #myImg {

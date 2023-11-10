@@ -12,6 +12,27 @@ function toggleMenu() {
   }
 }
 
+// Function to highlight the active link based on scroll position
+function highlightActiveLink() {
+  var scrollPosition = window.scrollY;
+  var sections = document.querySelectorAll('section');
+
+  sections.forEach(section => {
+      var sectionTop = section.offsetTop - 70; // Adjusted for the fixed header
+      var sectionBottom = sectionTop + section.offsetHeight;
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          var correspondingLink = document.querySelector('a[href="#' + section.id + '"]');
+          if (correspondingLink) {
+              document.querySelectorAll('#nav-links a').forEach(link => {
+                  link.classList.remove('active');
+              });
+              correspondingLink.classList.add('active');
+          }
+      }
+  });
+}
+
 // Close the hamburger menu when a navigation link is clicked
 document.querySelectorAll('#nav-links a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -42,6 +63,12 @@ document.addEventListener('click', function (e) {
       menuIcon.style.backgroundColor = ''; // Reset to default or remove this line if not needed
   }
 });
+
+// Call the highlightActiveLink function on scroll
+document.addEventListener('scroll', highlightActiveLink);
+
+// Call the highlightActiveLink function on page load
+document.addEventListener('DOMContentLoaded', highlightActiveLink);
 
 // Get the modal
 var modal = document.getElementById("myModal");

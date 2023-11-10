@@ -1,3 +1,8 @@
+// Function to scroll to the top when the page is loaded or refreshed
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+
 // Function to toggle the menu
 function toggleMenu() {
   var navLinks = document.getElementById("nav-links");

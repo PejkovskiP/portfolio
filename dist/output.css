@@ -644,10 +644,6 @@ video {
   width: 6rem;
 }
 
-.w-4\/6 {
-  width: 66.666667%;
-}
-
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -958,6 +954,10 @@ video {
 @media (min-width: 768px) {
   .md\:mt-\[200px\] {
     margin-top: 200px;
+  }
+
+  .md\:w-4\/6 {
+    width: 66.666667%;
   }
 
   .md\:w-5\/6 {

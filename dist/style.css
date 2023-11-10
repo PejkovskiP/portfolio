@@ -142,7 +142,16 @@
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
-        width: 100%;
+        width: 80%;
+    }
+
+    .close {
+        top: 62px;
+        right: 10px;
+    }
+
+    .modal {
+        padding-top: 130px;
     }
 }
 

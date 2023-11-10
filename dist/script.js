@@ -5,6 +5,9 @@ function toggleMenu() {
 
   // Toggle styles directly on the menu icon
   var menuIcon = document.querySelector('.menu-icon');
+  menuIcon.classList.toggle("open"); // Add this line to toggle the open class
+
+  // Additional styles if needed
   if (navLinks.classList.contains("show")) {
       menuIcon.style.backgroundColor = '#3A4D39'; // Change this to your menu background color
   } else {

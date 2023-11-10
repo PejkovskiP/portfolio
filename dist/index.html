@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/p-favicon.svg" />
+    <link rel="stylesheet" href="/assets/font-awesome/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+<body>
+    <!-- NAV MENU START -->
+    <nav class="bg-[#3A4D39] dark:text-white py-4 shadow-sm w-full">
+        <div class="w-10/12 mx-auto flex flex-col md:flex-row items-center md:justify-between">
+            <!-- Logo -->
+            <div>
+                <h2 class="text-3xl font-bold">
+                    <a href="index.html">PEJKOVSKI PETAR</a>
+                </h2>
+            </div>
+            <!-- /End Logo -->
+            <div class="mt-5 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:space-x-5 w-full items-center">
+                    <li>
+                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300">About</a>
+                    </li>
+                    <li>
+                        <a class="font-semibold tracking-tight block cursor-pointer p-2 hover:text-[#609966] uppercase transition-colors duration-300">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /NAV MENU END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="bg-[#B0D9B1]">
+        <div class="flex flex-col items-center justify-center gap-6 w-11/12 md:w-full mx-auto">
+            <!-- Portfolio image -->
+            <div class="bg-[#3A4D39] rounded-t-full mt-40">
+                <figure class="-mt-[110px]">
+                    <img class="" src="/assets/img/petar.png">
+                </figure>
+            </div>
+
+            <!-- Main title -->
+            <h1 class="text-3xl md:text-4xl text-white font-bold uppercase tracking-[0.20rem]">Petar Pejkovski</h1>
+
+            <!-- Icon Devider -->
+            <div class="flex items-center gap-3">
+                <div class="border bg-white w-24 h-[5px] rounded-md"></div>
+                <div class="text-white"><i class="fa-solid fa-xl fa-code"></i></div>
+                <div class="border bg-white w-24 h-[5px] rounded-md"></div>
+            </div>
+
+            <!-- Job position -->
+            <p class="text-xl md:text-2xl text-white font-bold uppercase tracking-[0.10rem] mb-10">Front-End Developer</p>
+        </div>
+    </header>
+    <!-- /HEADER SECTION END -->
+
+    <!-- PORTFOLIO -->
+    <section class="w-4/6 mx-auto my-20">
+
+        <!-- Portfolio title -->
+        <h2 class="text-3xl md:text-4xl text-[#40513B] font-bold text-center uppercase tracking-[0.10rem]">Porftolio</h2>
+
+        <!-- Icon Devider -->
+        <div class="flex justify-center my-6 items-center gap-3">
+            <div class="border bg-[#40513B] w-24 h-[5px] rounded-md"></div>
+            <div class="text-[#40513B]"><i class="fa-solid fa-xl fa-diagram-project"></i></div>
+            <div class="border bg-[#40513B] w-24 h-[5px] rounded-md"></div>
+        </div>
+
+        <!-- Projects block -->
+        <div class="flex justify-center">
+            <!-- Trigger the Modal -->
+            <img id="myImg" src="/assets/img/Portfolio/priorilist-portfolio.png" alt="Priorilist">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="priorilist">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption" class="modal-caption">
+                    <p>
+                        <a class="font-bold underline" href="https://github.com/PejkovskiP/PrioriList" target="_blank">PrioriList</a>- Prioritize Your Productivity <br> PrioriList is your ultimate to-do list app, helping you prioritize your tasks and boost your productivity. With a user-friendly interface and smart features, you can effortlessly organize your daily life and accomplish what matters most. Make every moment count with PrioriList.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /PORTFOLIO END-->
+
+    <!-- ABOUT -->
+    <section class="my-20 h-auto lg:h-screen bg-[#B0D9B1]">
+
+        <div class="w-11/12 md:w-5/6 mx-auto py-[6rem]">
+            <!-- About title -->
+            <h2 class="text-3xl md:text-4xl text-white font-bold text-center uppercase tracking-[0.10rem]">About</h2>
+
+            <!-- Icon Devider -->
+            <div class="flex justify-center my-6 items-center gap-3">
+                <div class="border bg-white w-24 h-[5px] rounded-md"></div>
+                <div class="text-white"><i class="fa-regular fa-xl fa-address-card"></i></div>
+                <div class="border bg-white w-24 h-[5px] rounded-md"></div>
+            </div>
+
+            <!--About Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- About me -->
+                <div>
+                    <h3 class="mb-[0.5rem] text-white font-bold text-xl md:text-2xl">About Me</h3>
+                    <p class="text-[1.25rem] text-white">I'm a junior front-end developer passionate about creating captivating websites. With a solid grasp of HTML, CSS, and JavaScript, I skillfully bring design concepts to life. Proficient in PHP and Content Management Systems, I tackle diverse projects, blending creativity with technical expertise. Specializing in web development and maintenance, I ensure every site is visually stunning, functional, and user-friendly. I showcase my coding journey on <a class= "text-[#40513B] transition-colors duration-300 hover:text-[#609966]" href="https://github.com/PejkovskiP?tab=repositories" target="_blank">GitHub</a>, contributing to the vibrant developer community.</p>
+                </div>
+
+                <!-- Experience -->
+                <div>
+                    <h3 class="mb-[0.5rem] text-white font-bold text-xl md:text-2xl">Experience</h3>
+                    <p class="text-[1.25rem] text-white">I have had the privilege to work on a variety of projects, from e-commerce platforms to informative websites, utilizing my skills to bring designs to life and deliver exceptional user experiences.<br>
+                    I understand the importance of web performance, accessibility, and SEO, and I ensure that these elements are integral to the sites I develop. My professional journey has been a valuable learning experience, allowing me to collaborate with teams, meet project deadlines, and adapt to new technologies.<br>
+                    I have also had the opportunity to take on website maintenance tasks, enhancing my problem-solving abilities and attention to detail.</p>
+                </div>
+                
+                <!-- Education -->
+                <div>
+                    <h3 class="mb-[0.5rem] text-white font-bold text-xl md:text-2xl">Education</h3>
+                    <div class="text-[1.25rem] text-white relative pl-4">
+                       <span class="absolute inset-0 flex items-center">
+                            <span class="h-2 w-2 rounded-full bg-white"></span>
+                       </span>
+                       <span>Faculty of Information And Communication Technologies.</span> 
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <h3 class="mb-[0.5rem] text-white font-bold text-xl md:text-2xl">Skills</h3>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                        <div>
+                            <div class="text-[1.25rem] text-white relative pl-4">
+                                <span class="absolute inset-0 flex items-center">
+                                    <span class="h-2 w-2 rounded-full bg-white"></span>
+                                </span>
+                                <span>HTML</span> 
+                            </div>
+                            <div class="text-[1.25rem] text-white relative pl-4">
+                                <span class="absolute inset-0 flex items-center">
+                                    <span class="h-2 w-2 rounded-full bg-white"></span>
+                                </span>
+                                <span>CSS</span> 
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-[1.25rem] text-white relative pl-4">
+                                <span class="absolute inset-0 flex items-center">
+                                    <span class="h-2 w-2 rounded-full bg-white"></span>
+                                </span>
+                                <span>JavaScript</span> 
+                            </div>
+                            <div class="text-[1.25rem] text-white relative pl-4">
+                                <span class="absolute inset-0 flex items-center">
+                                    <span class="h-2 w-2 rounded-full bg-white"></span>
+                                </span>
+                                <span>PHP</span> 
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-[1.25rem] text-white relative pl-4">
+                                <span class="absolute inset-0 flex items-center">
+                                    <span class="h-2 w-2 rounded-full bg-white"></span>
+                                </span>
+                                <span>Wordpress</span> 
+                            </div>
+                            <div class="text-[1.25rem] text-white relative pl-4">
+                                <span class="absolute inset-0 flex items-center">
+                                    <span class="h-2 w-2 rounded-full bg-white"></span>
+                                </span>
+                                <span>Drupal</span> 
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /ABOUT END-->
+
+    <!-- CONTACT -->
+    <section class="mx-auto w-11/12 sm:w-9/12 md:8/12 lg:w-1/2 h-auto md:h-screen">
+        <!-- About title -->
+        <h2 class="text-3xl md:text-4xl text-[#40513B] font-bold text-center uppercase tracking-[0.10rem]">Contact me</h2>
+
+        <!-- Icon Devider -->
+        <div class="flex justify-center my-6 items-center gap-3">
+            <div class="border bg-[#40513B] w-24 h-[5px] rounded-md"></div>
+            <div class="text-[#40513B]"><i class="fas text-xl fa-envelope-open-text"></i></div>
+            <div class="border bg-[#40513B] w-24 h-[5px] rounded-md"></div>
+        </div>
+
+        <!-- Form -->
+        <form class="mt-20" action="https://formbold.com/s/FORM_ID" method="POST">
+            <div class="mb-5">
+                <label for="name" class="mb-3 block text-base font-medium text-[#40513B]">
+                    Full Name
+                </label>
+                <input type="text" name="name" id="name" placeholder="Full Name"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#40513B] outline-none focus:border-[#609966] focus:shadow-md" />
+            </div>
+            <div class="mb-5">
+                <label for="email" class="mb-3 block text-base font-medium text-[#40513B]">
+                    Email Address
+                </label>
+                <input type="email" name="email" id="email" placeholder="example@domain.com"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#40513B] outline-none focus:border-[#609966] focus:shadow-md" />
+            </div>
+            <div class="mb-5">
+                <label for="subject" class="mb-3 block text-base font-medium text-[#40513B]">
+                    Subject
+                </label>
+                <input type="text" name="subject" id="subject" placeholder="Enter your subject"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#40513B] outline-none focus:border-[#609966] focus:shadow-md" />
+            </div>
+            <div class="mb-5">
+                <label for="message" class="mb-3 block text-base font-medium text-[#40513B]]">
+                    Message
+                </label>
+                <textarea rows="4" name="message" id="message" placeholder="Type your message"
+                    class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#40513B] outline-none focus:border-[#609966] focus:shadow-md"></textarea>
+            </div>
+            <div>
+                <button
+                    class="hover:shadow-form rounded-md bg-[#609966] transition-colors duration-300 hover:bg-[#75aa7a] py-3 px-8 text-base font-semibold text-white outline-none">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </section>
+    <!-- /CONTACT END -->
+
+    <!-- FOOTER -->
+    <footer class="mt-20 bg-[#3A4D39]">
+        <div class="w-5/6 mx-auto py-[6rem]">
+            <!-- Content wrapper -->
+            <div class="flex flex-col md:flex-row justify-center md:justify-around gap-10">
+                
+                <!-- Location -->
+                <div>
+                    <h4 class="mb-[0.5rem] text-white text-center font-bold text-xl md:text-2xl uppercase">Location</h4>
+                    <p class="text-[1.25rem] text-center text-white">
+                        Bitola
+                        <br />
+                        Macedonia
+                    </p>
+                </div>
+
+                <!-- Social media links -->
+                <div>
+                    <h4 class="mb-[1rem] text-white text-center font-bold text-xl md:text-2xl uppercase">Connect With Me</h4>
+                    <div class="flex justify-center items-center gap-3">
+                        <a class="border border-white text-white hover:bg-white hover:text-[#40513B] transition-colors duration-300 rounded-full inline-flex items-center justify-center w-[3.25rem] h-[3.25rem]" href="https://www.linkedin.com/in/petar-pejkovski-590950298/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="border border-white text-white hover:bg-white hover:text-[#40513B] transition-colors duration-300 rounded-full inline-flex items-center justify-center w-[3.25rem] h-[3.25rem]" href="https://github.com/PejkovskiP" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a class="border border-white text-white hover:bg-white hover:text-[#40513B] transition-colors duration-300 rounded-full inline-flex items-center justify-center w-[3.25rem] h-[3.25rem]" href="https://www.facebook.com/petar.pejkovski/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright section -->
+    <section class="bg-[#2B3A29] py-4 text-center text-white">
+        <div class="flex justify-center items-center">
+            <p class="text-sm text-white">Copyright &copy; Petar 2023</p>
+        </div>
+    </section>
+    <!-- /FOOTER END -->
+    <script src="script.js"></script>
+  </body>
+</html>
